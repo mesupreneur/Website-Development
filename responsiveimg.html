@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!---------Device Pixel Ratio------------->
+
+    <!-- <img width="100%" 
+    srcset="images/family1x.jpg, images/family2x.jpg 2x, images/family3x.jpg 3x"
+    src="images/family3x.jpg" alt="family photo"> -->
+
+
+    <!---------We can even change the image in different DPR-------->
+    <!---------1x by default----------->
+
+    <!---------To Tackle Art Direction Problem-------Crop image-->
+    <!---------Showing different images for screen sizes rather than just changing the resolution of the image-->
+
+    <img width="100%" 
+    srcset="images/family-desktop.jpg 1000w,
+    images/family-tablet.jpg 800w,
+    images/family-mobile.jpg 500w"
+    sizes="(max-width: 500px) 500px,
+   (max-width: 800px) 800px,
+   1000px"
+    
+    src="images/family3x.jpg" alt="family photo">
+</body>
+</html>
